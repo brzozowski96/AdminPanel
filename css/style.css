@@ -1,0 +1,166 @@
+body {
+  //background: #CBD7DD;
+
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2980b9 , #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2980b9 , #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+}
+
+/* Navbar */
+
+.navbar {
+  //background: #6D86DD;
+  //border: #7EDDEE;
+  color: white;
+  margin-top: 15px;
+}
+.navbar a {
+  color: white;
+}
+.navbar-brand-img {
+  padding: 4px;
+}
+.navbar-right li {
+  margin: 0 3.5px;
+}
+
+/*Menu*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+label[for="nav-switch"] {
+  position: fixed;
+  float: right;
+  padding: 6px 8px;
+  margin-bottom: 0;
+  background: transparent;
+  z-index: 999999;
+  top: 24px;
+  right: 80px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+
+  display: block;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 5px;
+  //background: #eee;
+  color: #aaa;
+  border-radius: 2px;
+  line-height: 1.1em;
+  height: 30px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.nav-switch:checked + .col-left {
+  left: 0;
+  transition: 0.2s;
+}
+
+@media (max-width: 767px) {
+  .col-left {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 87px;
+    right: 0;
+    bottom: 0;
+    left: -100%;
+    z-index: 1;
+    transition: 0.2s;
+  }
+}
+
+/* End menu */
+
+.footer {
+  margin: 30px 0 15px;
+  background: #e7e7e7;
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* Login panel */
+
+.panel-glass {
+  background-color:rgba(0, 0, 0, 0.0);
+  border: none;
+  box-shadow: none;
+}
+.login-label label {
+  color: #fff;
+}
+.login-link {
+  color: #fff;
+}
+.login-link:hover {
+  color: #eee;
+}
+
+
+/* Posts */
+
+.post-content {
+  text-align: justify;
+}
+.post-separator {
+  margin: 8px;
+}
+.post-action {
+  margin-right: 5%;
+  transition: 0.2s;
+}
+
+/* Popovers on navbar */
+
+.mini-alerts a {
+  position: relative;
+}
+.mini-alerts .badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: .7em;
+  padding: 4px;
+  background: #ff0000;
+  color: #fff;
+}
+.mini-alerts .popover {
+  width: 200px;
+  color: #333;
+}
+.mini-alerts p {
+  border-bottom: 1px dotted #ddd;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  font-size: .9em;
+}
+
+
+/* Elements */
+
+.btn {
+  transition: background 0.2s;
+}
+.col-right .btn{
+  margin-bottom: 8px;
+}
+.header-light {
+  color: white;
+}
+.img-center {
+  text-align: center;
+}

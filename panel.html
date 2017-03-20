@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Panel administracyjny | BLOGApp</title>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="img/short.png" rel="icon">
+	</head>
+	<body>
+		<div class="container">
+
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			      	</button>
+			    	<a class="navbar-brand navbar-brand-img" href="#">
+			    		<img alt="Brand" src="img/brand.png">			    			
+			      	</a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      
+			      <ul class="nav navbar-nav navbar-right">
+			        <!-- <li><a href="#">Moje konto</a></li> -->
+			        <li>
+			        	<form class="navbar-form navbar-right">
+					        <div class="input-group">
+						      <input type="text" class="form-control" placeholder="Wyszukaj...">
+						      <span class="input-group-btn">
+						        <button class="btn btn-default" type="button">
+						        	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						        </button>
+						      </span>
+						    </div><!-- /input-group -->
+					    </form>
+					</li>
+
+					<li class="mini-alerts">
+			        	<a href="#" tabindex="0" data-toggle="popover" role="button" data-placement="bottom" title="Nowe wiadomości" data-content="
+			        	<p>Do realizacji na jutro</p>
+			        	<p>Prośba o urlop</p>
+			        	<p>Artykuły do publikacji</p>">
+			          		<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+			          		<span class="badge">28</span>
+			        	</a>
+			        </li>
+
+			        <li class="mini-alerts">
+			        	<a href="#">
+			          		<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+			          		<span class="badge">3</span>
+			        	</a>
+			        </li>
+
+			        <li class="mini-alerts">
+			        	<a href="#">
+			          		<span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+			          		
+			        	</a>
+			        </li>
+
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			          	<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+			          	Moje konto <!-- <span class="caret"></span> --></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Ustawienia</a></li>
+			            <li><a href="#">Aktualizacja</a></li>
+			            <li><a href="#">Powiadomienia</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">Pomoc</a></li>
+			            <li><a href="#">Wyloguj się</a></li>
+			          </ul>
+			        </li>
+
+			        <li class="dropdown">
+			        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			        	<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+			        	Polski <!-- <span class="caret"></span> --></a>
+			        	<ul class="dropdown-menu">
+				            <li><a href="#">English</a></li>
+				            <li><a href="#">Deutsch</a></li>
+			        	</ul>
+			        </li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+
+			<div class="row">
+				<!-- LEFT -->
+				<label for="nav-switch" class="visible-xs-block">Menu</label>
+					<input type="checkbox" id="nav-switch" class="nav-switch visible-xs-block visuallyhidden">
+				<div class="col-sm-3 col-xs-12 col-left">
+					<!-- <ul class="nav nav-pills nav-stacked">
+					  <li role="presentation" class="active"><a href="#">Home</a></li>
+					  <li role="presentation"><a href="#">Profile</a></li>
+					  <li role="presentation"><a href="#">Messages</a></li>
+					</ul> -->
+
+					<ul class="list-group">
+					  <li class="list-group-item"><a href="panel.html"></a>Panel</a></li>
+					  <li class="list-group-item">Dapibus ac facilisis in</li>
+					  <li class="list-group-item">Morbi leo risus</li>
+					  <li class="list-group-item disabled">Dodaj nowe zadanie</li>
+					  <li class="list-group-item list-group-item-warning">Pokaż niewykonane zadania<span class="badge">28</span></li>
+					</ul>
+				</div>
+
+				<!-- CENTER -->
+				<div class="col-sm-5 col-center">
+					<div class="row">
+						<div class="col-xs-12">
+							<ol class="breadcrumb">
+							  <li><a href="#">Home</a></li>
+							  <li><a href="#">Library</a></li>
+							  <li class="active">Data</li>
+							</ol>				
+						</div>
+						<div class="col-xs-12">
+							<div class="alert alert-warning alert-dismissible" role="alert">
+							  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							  <strong>Uwaga!</strong> Zaktualizuj oprogramowanie 
+							  <a href="#" class="alert-link">klikając tutaj</a>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<h3>Lorem ipsum dolor sit amet</h3>
+									<p><b>Autor:</b> <i>Michał Kotras</i></p>
+									<p class="post-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+									<hr class="post-separator">
+									<a href="#" class="post-action">
+										<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+										Lubię to!
+									</a>
+									<a href="#" class="post-action">
+										<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+										Edytuj
+									</a>
+									<a href="#" class="post-action">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+										Usuń
+									</a>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<h3>Lorem ipsum dolor sit amet</h3>
+									<p><b>Autor:</b> <i>Michał Kotras</i></p>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+									<div class="btn-group" role="group" aria-label="Co zrobić z postem">
+									  <button type="button" class="btn btn-mini btn-default">Edytuj</button>
+									  <button type="button" class="btn btn-mini btn-default">Wyłącz</button>
+									  <button type="button" class="btn btn-mini btn-default">Usuń</button>
+									</div>
+								</div>
+							</div>
+				
+						</div>
+					</div>				
+				</div>
+
+				<!-- RIGHT -->
+				<div class="col-sm-4 col-xs-12 col-right">
+					<div class="row">
+						<div class="col-xs-12">
+							<button type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#logOut">Wyloguj się, Michał Kotras</button>
+
+							<!-- START Modal -->
+							<div class="modal fade" id="logOut" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							  <div class="modal-dialog modal-sm">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							        <h4 class="modal-title">Czy na pewno chcesz się wylogować?</h4>			        
+							      </div>
+							      <div class="modal-body">
+							        <p>Stracisz możliwość korzystania z aplikacji. Oczywiście w każdej chwili będziesz mógł tutaj wrócić</p>
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-link">Tak, chcę</button>
+							        <button type="button" class="btn btn-primary" data-dismiss="modal">Oczywiście, że nie!</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+							<!-- END Modal -->
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="infoBox1">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expand="true" aria-controls="collapse1">
+											Wersja 3.1.2
+										</a>
+									</h4>
+								</div>
+								<div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="infoBox1">
+									<div class="panel-body">
+										Dodano obsługę udostępniania zadań w kalendarzu innym zarejestrowanym użytkownikom
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="infoBox2">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expand="true" aria-controls="collapse2">
+											Wersja 3.1.1
+										</a>
+									</h4>
+								</div>
+								<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="infoBox2">
+									<div class="panel-body">
+										Dodano obsługę udostępniania zadań w kalendarzu innym zarejestrowanym użytkownikom
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="infoBox3">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expand="true" aria-controls="collapse3">
+											Wersja 3.1.0
+										</a>
+									</h4>
+								</div>
+								<div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="infoBox3">
+									<div class="panel-body">
+										Dodano obsługę udostępniania zadań w kalendarzu innym zarejestrowanym użytkownikom
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-12">
+									<h3 class="header-light">Moje skróty</h3>
+								</div>
+								<div class="col-md-6 col-xs-12">
+									<a href="#task" class="btn btn-warning btn-block" role="button">Dodaj zadanie</a>
+								</div>
+								<div class="col-md-6 col-xs-12">
+									<a href="#user" class="btn btn-danger btn-block" role="button">Dodaj użytkownika</a>
+								</div>
+								<div class="col-md-6 col-xs-12">
+									<a href="#update" class="btn btn-info btn-block" role="button">Sprawdź aktualizacje</a>
+								</div>
+								<div class="col-md-6 col-xs-12">
+									<a href="#settings" class="btn btn-success btn-block" role="button">Zmień ustawienia</a>
+								</div>
+							</div>				
+						</div>
+					</div>				
+				</div>
+
+			</div>
+
+			<div class="row footer">
+				<div class="col-xs-12">
+					Karol Brzozowski 2017
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
